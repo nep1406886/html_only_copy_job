@@ -1,0 +1,845 @@
+/* * {
+background: #000 !important;
+color: #0f0 !important;
+outline: solid #f00 1px !important;
+} */
+/* 可以拿来查看网页结构，tmd居然是那浮动小点撑开了界面，艹 */
+
+html {
+    margin: 0px 0px;
+    padding: 0px;
+    /* overflow-x: hidden; */
+    /* 隐藏滚动条，浮动小点bug治标法 */
+}
+
+body {
+    background-color: whitesmoke;
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 0;
+}
+
+#thisfloatnav {
+    display: none;
+}
+
+.floatnav {
+    background-color: rgba(233, 231, 231, 0.89);
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.floatNavUl {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-size: large;
+}
+
+.floatNavUl li {
+    float: left;
+}
+
+.floatNavUl li a {
+    padding-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    width: 100px;
+    height: 44px;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+    text-align: center;
+    display: inline-block;
+}
+
+.floatNavUl li a:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.floatNavUlaBorder {
+    border-left: none;
+}
+
+.floatnavimg {
+    width: 120px;
+    display: block;
+    margin-top: 0px;
+    float: right;
+    margin-right: 10%;
+    border-radius: 10%;
+}
+
+.floatnavDivLeft {
+    padding-left: 10%;
+}
+
+.floatnavOneDiv {
+}
+
+/* 头部 */
+
+header {
+    background-color: rgb(27, 28, 29);
+    margin: 0;
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(88, 126, 151, 0.5);
+}
+
+header div:first-child {
+    padding: 20px 10% 10px 10%;
+    height: 500px;
+    animation-name: headerChange;
+    animation-duration: 4s;
+}
+
+@keyframes headerChange {
+    0% {
+        height: 500px;
+    }
+    50% {
+        height: 800px;
+    }
+    52% {
+        height: 800px;
+    }
+    /* 52% {
+    height: 800px;
+} */
+    /* 85% {
+    height: 600px;
+} */
+    100% {
+        height: 500px;
+    }
+}
+
+.HeaderMenu {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-size: large;
+}
+
+.HeaderMenu li {
+    float: left;
+}
+
+.HeaderMenu li a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    /* background-color: rgb(27, 28, 29); */
+    animation-duration: 4s;
+    animation-name: menu;
+}
+
+@keyframes menu {
+    0% {
+        color: rgb(73, 71, 71);
+        position: relative;
+        right: 400px;
+    }
+    99% {
+        position: relative;
+        right: 1px;
+    }
+    100% {
+        color: rgb(165, 162, 162);
+    }
+}
+
+.HeaderMenu li a:hover {
+    /* background-color: rgb(17,17,17); */
+    color: white;
+}
+
+.ulunderline {
+    background: url(../images/n下划线1.3.png);
+}
+
+header div img {
+    height: 60px;
+    /* width: 89.75px; */
+    float: right;
+    position: relative;
+    /* top: 10px; */
+    top: -15px;
+    animation-duration: 4s;
+    animation-name: kdllogo;
+}
+
+@keyframes kdllogo {
+    from {
+        position: relative;
+        top: -15px;
+        left: 200px;
+    }
+    99% {
+        position: relative;
+        top: -15px;
+        left: 1px;
+    }
+    to {
+        float: right;
+        position: relative;
+        top: -15px;
+    }
+}
+
+/* h1,
+h2 {
+clear: both;
+text-align: center;
+color: rgb(233, 233, 233);
+font-size: 1.5em;
+} */
+
+header h1 {
+    clear: both;
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: redh1;
+    margin: 0;
+    padding-top: 80px;
+    color: rgb(97, 82, 121);
+    font-size: 5em;
+}
+
+@keyframes redh1 {
+    from {
+        position: relative;
+        top: -200px;
+        color: rgb(97, 82, 121);
+    }
+    20% {
+        color: rgb(97, 82, 121);
+    }
+    66% {
+        color: rgb(254, 196, 120);
+    }
+    99.9% {
+        position: relative;
+        top: -0.1px;
+    }
+    to {
+        color: rgb(97, 82, 121);
+        padding-top: 80px;
+    }
+}
+
+.oneH2 {
+    color: rgb(233, 233, 233);
+    clear: both;
+    text-align: center;
+    font-size: 1.5em;
+    animation-name: oneh2;
+    animation-duration: 4s;
+}
+
+@keyframes oneh2 {
+    0% {
+        position: relative;
+        right: 1000px;
+    }
+    99% {
+        position: relative;
+        right: 1px;
+    }
+    100% {
+    }
+}
+
+.twoH2 {
+    color: rgb(233, 233, 233);
+    clear: both;
+    text-align: center;
+    font-size: 2.5em;
+    animation-name: twoh2;
+    animation-duration: 4s;
+}
+
+@keyframes twoh2 {
+    0% {
+        position: relative;
+        left: 1000px;
+    }
+    99% {
+        position: relative;
+        left: 1px;
+    }
+    100% {
+    }
+}
+
+header h3 {
+    position: relative;
+    bottom: 50px;
+    font-size: 3.5em;
+    color: rgba(0, 0, 0, 0);
+    animation-name: h3;
+    animation-duration: 5s;
+}
+
+h1,
+h2,
+h3:hover {
+    cursor: default;
+    /* 鼠标显示类型 */
+}
+
+@keyframes h3 {
+    0% {
+        color: black;
+    }
+    90% {
+        color: black;
+    }
+    100% {
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+/* 当前网页导航栏显示白色 */
+
+.HeaderMenuWhite {
+    color: rgb(255, 255, 255);
+}
+
+/* 下面为主体 */
+/* 下面为主体 */
+/* 下面为主体 */
+/* 下面为主体 */
+/* 下面为主体 */
+
+main {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.maindiv {
+    margin: 0 auto;
+    padding: 0;
+    width: 1140px;
+    height: 910px;
+    padding-bottom: 10px;
+}
+
+.maindiv:hover {
+    cursor: pointer;
+}
+
+.maindiv div {
+    margin: 0 auto;
+    background: black;
+    width: 265px;
+    height: 285px;
+    margin: 10px;
+    overflow: hidden;
+    float: left;
+    border-radius: 3%;
+    box-shadow: 1px 1px 2px rgba(88, 126, 151, 0.5);
+}
+
+.maindiv div:hover {
+    box-shadow: 13px 13px 13px rgb(171, 180, 185);
+}
+
+.maindiv div img {
+    display: block;
+    width: 265px;
+    height: 285px;
+    border-radius: 3%;
+    border: black;
+    opacity: 0.8;
+}
+
+.maindiv div img:hover {
+    opacity: 1;
+}
+
+/*
+轮播图 */
+
+.mainSlideshow {
+    margin: 0, auto;
+    padding: 0;
+    width: 100%;
+}
+
+.mainSlideshowOneDiv {
+    padding-top: 20px;
+    width: 788px;
+    height: 500px;
+    margin: auto;
+    padding-left: 80;
+    padding-right: 80;
+    /* background-color: cadetblue; */
+}
+
+.mainSlideshowUl {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.mainSlideshowUl img {
+    display: block;
+    box-shadow: 10px 10px 10px rgba(88, 126, 151, 0.5);
+    border-radius: 3%;
+}
+
+.mainSlideshowLi {
+    position: absolute;
+    opacity: 0;
+    transition: all 2s;
+    width: 788px;
+    height: 487px;
+}
+
+.btn {
+}
+
+#left {
+    display: block;
+    z-index: 1000;
+    position: relative;
+    top: -315px;
+    width: 100px;
+    height: 120px;
+    left: -196px;
+    transform: all 2;
+    opacity: 0;
+}
+
+#right {
+    display: block;
+    z-index: 1000;
+    position: relative;
+    top: -438px;
+    width: 100px;
+    height: 120px;
+    right: -710px;
+    transform: all 2;
+    opacity: 0;
+}
+
+.mainSlideshowLi.displayimg {
+    z-index: 100;
+    opacity: 1;
+}
+
+.pointUl {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    list-style: none;
+    z-index: 1010;
+    position: relative;
+    top: -40px;
+    right: -340px;
+}
+
+.pointLi {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.527);
+    float: left;
+    margin-right: 30px;
+    border: solid 2px rgba(255, 255, 255, 0.9);
+}
+
+.pointLi.displayimg {
+    transition: all 0.5s;
+    background-color: rgba(88, 126, 151);
+}
+
+/* 轮播图 */
+/* 文字显示 */
+
+.mainword {
+    clear: both;
+    margin-top: 20px;
+    padding-top: 7px;
+    width: 100%;
+    height: 420px;
+    background-color: rgb(27, 28, 29);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.mainword h2 {
+    margin: 20px;
+}
+
+.word {
+    color: rgb(27, 28, 29);
+}
+
+.heavenliness {
+    font-size: 3em;
+}
+
+#oneWord {
+    transition-delay: 0ms;
+    transition-duration: 3s;
+}
+
+#twoWord {
+    transition-delay: 1s;
+    transition-duration: 2s;
+}
+
+#threeWord {
+    transition-delay: 3s;
+    transition-duration: 2s;
+}
+
+#fourWord {
+    transition-delay: 5s;
+    transition-duration: 2s;
+}
+
+#fiveWord {
+    transition-delay: 8s;
+    transition-duration: 3s;
+}
+
+/* @keyframes mainwordAni {
+0% {
+    color: rgb(27, 28, 29);
+}
+90% {
+    color: rgba(27, 28, 29, 0.869);
+}
+95% {
+    color: white;
+}
+100% {
+    color: rgb(236, 236, 236);
+}
+} */
+
+.oneimg {
+    /* clear: both; */
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    /* overflow: hidden; */
+    padding: 0;
+    width: 100%;
+    background-color: rgb(27, 28, 29);
+}
+
+.oneimg img {
+    display: block;
+}
+
+/* 页脚 */
+/* 页脚 */
+/* 页脚 */
+/* 页脚 */
+/* 页脚 */
+
+footer {
+    margin: 0 auto;
+    padding: 0;
+    /* position: relative; */
+    /* left: -110px; */
+    width: 100%;
+    box-shadow: 3px 10px 10px rgba(1, 5, 7, 0.5);
+}
+
+.footerDiv li,
+ul,
+p,
+h2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerDivFirst-child {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(27, 28, 29);
+    width: 100% -110px;
+    height: 250px;
+    padding-left: 110px;
+}
+
+.footerDiv {
+    width: 180px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    padding-top: 60px;
+    padding-right: 30px;
+}
+
+.footerDivOne {
+    /* margin-left: 110px; */
+}
+
+.footerDivContent {
+    text-align: left;
+    padding-left: 20px;
+    /* margin-top: 50px; */
+    border-left: solid 1px rgb(50, 51, 52);
+    height: 150px;
+}
+
+.Noborder {
+    border-left: none;
+}
+
+.footerDivContent h2 {
+    font-size: 0.9em;
+    color: whitesmoke;
+    padding-bottom: 6px;
+    padding-top: 23px;
+}
+
+.footerDivContent li {
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+}
+
+.footerDivContent p {
+    font-size: 0.9em;
+    color: rgb(235, 235, 235);
+    padding-bottom: 14px;
+}
+
+.footerDivContent a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: rgb(143, 142, 142);
+}
+
+.footerDivContent a:hover {
+    color: whitesmoke;
+}
+
+.footerDivThree {
+    margin-right: 0;
+    width: 220px;
+}
+
+.footerDivContentThree > p:first-child {
+    padding-top: 23px;
+}
+
+.footerDivContentThree a {
+    color: rgb(88, 126, 151);
+}
+
+/* 一点点的响应式布局 */
+/* 一点点的响应式布局 */
+/* 一点点的响应式布局 */
+/* 一点点的响应式布局 */
+/* 一点点的响应式布局 */
+/* 一点点的响应式布局 */
+
+@media screen and (max-width: 1144px) {
+    .maindiv {
+        margin: 0 auto;
+        padding: 0;
+        width: 768px;
+        height: 630px;
+    }
+
+    .maindiv div img {
+        display: block;
+        width: 176px;
+        height: auto;
+        border-radius: 3%;
+        border: black;
+    }
+
+    .maindiv div {
+        margin: 0 auto;
+        background: white;
+        width: 176px;
+        height: auto;
+        margin: 8px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .HeaderMenu {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    .oneH2 {
+        font-size: 1em;
+    }
+
+    .twoH2 {
+        font-size: 1.5em;
+    }
+
+    header {
+        height: 400px;
+        /* background-color: rgb(88,126,151); */
+    }
+
+    .maindiv {
+        margin: 0 auto;
+        padding: 0;
+        width: 376px;
+        height: 1220px;
+    }
+
+    .maindiv div img {
+        display: block;
+        width: 176px;
+        height: auto;
+        border-radius: 3%;
+        border: black;
+    }
+
+    .maindiv div {
+        margin: 0 auto;
+        background: white;
+        width: 176px;
+        height: auto;
+        margin: 6px;
+        float: left;
+        border-radius: 3%;
+    }
+
+    .mainSlideshow {
+        /* padding-top: 0px;
+        margin-top: 10px;
+        position: relative;
+        bottom: -30px; */
+    }
+
+    .mainSlideshowLi {
+        /* position: absolute;
+    opacity: 0;
+    transition: all.5; */
+        width: 394px;
+        height: 249.5px;
+    }
+
+    .mainSlideshowLi img {
+        width: 394px;
+        height: 249.5px;
+    }
+
+    .mainSlideshowUl {
+        width: 394px;
+    }
+
+    .mainSlideshowOneDiv {
+        margin-top: 20px;
+        width: 400px;
+        height: 260px;
+        margin: auto;
+        padding-left: 80;
+        padding-right: 80;
+    }
+
+    .btn {
+        width: 40px;
+        height: 60px;
+        z-index: 1000;
+        position: relative;
+        top: -160px;
+    }
+
+    #left {
+        width: 80px;
+        height: 90px;
+        top: -180px;
+        left: -190px;
+    }
+
+    #right {
+        width: 80px;
+        height: 90px;
+        top: -278px;
+        right: -334px;
+    }
+
+    .pointUl {
+        top: -35px;
+        right: -125px;
+    }
+
+    .mainword {
+        clear: both;
+        margin-top: 0px;
+        padding-top: 100px;
+        width: 100%;
+        height: 420px;
+        background-color: rgb(27, 28, 29);
+        text-align: center;
+        font-size: 1em;
+        color: rgb(236, 236, 236)
+    }
+
+    .heavenliness {
+        font-size: 3em;
+    }
+
+    .footerDivFirst-child {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(27, 28, 29);
+        width: 100% -70px;
+        height: 500px;
+        padding-left: 70px;
+        /* position: relative;
+        top: -20px; */
+        /* 临时处理手机页尾上方小白条 */
+    }
+
+    .footerDiv {
+        margin-top: 0;
+        overflow: hidden;
+        float: none;
+        height: 140px;
+        padding-top: 0px;
+        padding-right: 30px;
+    }
+
+    .footerDivContent {
+        text-align: left;
+        padding-left: 20px;
+        /* margin-top: 50px; */
+        border-left: none;
+        height: 150px;
+    }
+
+    .footerDivThree {
+        position: relative;
+        height: 230px;
+        top: -43px;
+    }
+
+    .footerDiv.footerDivOne {
+        height: 180px;
+        padding-top: +20px;
+        margin-top: 0;
+    }
+}
