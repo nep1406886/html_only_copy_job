@@ -16,11 +16,11 @@
 
 我的网站都是一个一个敲出来的。原作者的网站是用框架写的，能参考的只有布局，在写这个网站的过程中遇到了很多问题，尤其是空白问题。算是明白了没有无缘无故的空白。。虽然我大多数都想认为是无缘无故的。。例如轮播图做好后我的页面右侧空出来一大片例如。。
 
-![img](https://gitee.com/nep1406886/giteeimges/raw/master/1M6S`SQK%YWMN]W1MPD@[VL.png)
+![img](https://gitee.com/suoga1406886/giteeimges/raw/master/1M6S`SQK%YWMN]W1MPD@[VL.png)
 
 页脚上面的部分空白，后来发现是footer的一个子div高度设高了顶出来了。。
 
-![因为实在轮播的小点宽度问题而导致的右侧空白](https://gitee.com/nep1406886/giteeimges/raw/master/因为实在轮播的小点宽度问题而导致的右侧空白.png)
+![因为实在轮播的小点宽度问题而导致的右侧空白](https://gitee.com/suoga1406886/giteeimges/raw/master/因为实在轮播的小点宽度问题而导致的右侧空白.png)
 
 然后是上面这个。折腾最久的空白，审查元素好久才知道是因为轮播图的小点。用的ul宽度问题，因为浮动导致没高度所以只有一条线，导致很难找到问题所在。。
 
@@ -32,9 +32,9 @@
 
 然后就是js问题了，虽然只是用了三个，这个滑动的导航栏兼容性问题真的很，不去查文档就怀疑是代码出问题了。
 
-![image-20200701184018477](https://gitee.com/nep1406886/giteeimges/raw/master/image-20200701184018477.png)
+![image-20200701184018477](https://gitee.com/suoga1406886/giteeimges/raw/master/image-20200701184018477.png)
 
-我还引入了[**不蒜子统计**](http://ibruce.info/2015/04/04/busuanzi/)，引用了一个live2d的js[看板娘](https://github.com/akikowork)，看板娘不支持跨域名调用，所以谷歌本地打开无法显示，这个问题还是找这个js的开发人员问的。。然后顺便加了他们网站友链 [中国珂学院Wiki](https://wiki.sukasuka.cn/index.php?title=%E9%A6%96%E9%A1%B5&oldid=17764)  ![这网站开发组真是人才辈出。。](https://gitee.com/nep1406886/giteeimges/raw/master/1140px-珂说.jpg)因为这俩个插件，所以部署到码云是个非常好的选择，推荐通过最后的链接查看网页，另外没考虑浏览器兼容性问题，只有那个判断距离页面顶部高度的js获取考虑了下？（存疑）
+我还引入了[**不蒜子统计**](http://ibruce.info/2015/04/04/busuanzi/)，引用了一个live2d的js[看板娘](https://github.com/akikowork)，看板娘不支持跨域名调用，所以谷歌本地打开无法显示，这个问题还是找这个js的开发人员问的。。然后顺便加了他们网站友链 [中国珂学院Wiki](https://wiki.sukasuka.cn/index.php?title=%E9%A6%96%E9%A1%B5&oldid=17764)  ![这网站开发组真是人才辈出。。](https://gitee.com/suoga1406886/giteeimges/raw/master/1140px-珂说.jpg)因为这俩个插件，所以部署到码云是个非常好的选择，推荐通过最后的链接查看网页，另外没考虑浏览器兼容性问题，只有那个判断距离页面顶部高度的js获取考虑了下？（存疑）
 
 最后选择取消了轮播图的上一张下一张显示，但是点击盒子边缘仍可切换，只是把按钮透明化了
 
@@ -42,19 +42,14 @@
 
 每次自我感觉良好的时候都提交到了码云。。也算是证明是我一个人一手敲出来的，也是为了部署上去用手机查看效果，git配合vscode体验极佳，可惜没有块大屏，敲代码体验实属拉跨，这次仿造差不多学了很多。。效果也还算理想，对了。里面一些logo都是我自己裁剪的。。虽然只有几个，不过也说明ps还是会用一点的，，
 
-![image-20200701185443171](https://gitee.com/nep1406886/giteeimges/raw/master/image-20200701185443171.png)
+![image-20200701185443171](https://gitee.com/suoga1406886/giteeimges/raw/master/image-20200701185443171.png)
 
 我还想加些东西上去的，不过时间上好像有点不够，因为我做的有些迟了。。。
 
-![image-20200701185917954](https://gitee.com/nep1406886/giteeimges/raw/master/image-20200701185917954.png)
+![image-20200701185917954](https://gitee.com/suoga1406886/giteeimges/raw/master/image-20200701185917954.png)
 
 码云上面的提交数据emmm。
 
-最后附上地址，[中国珂朵莉某未收录分站](https://nep1406886.gitee.io/test1/)
+最后附上地址，[中国珂朵莉某未收录分站](https://suoga1406886.gitee.io/test1/)
 
-![https://gitee.com/nep1406886/giteeimges/raw/master/设定集_页面_002 副本.jpg)]()
-
-
-
-多年以后某人回忆起这玩意于是厚着脸皮拿来测试了
-2022.7.3
+![https://gitee.com/suoga1406886/giteeimges/raw/master/设定集_页面_002 副本.jpg)]()
